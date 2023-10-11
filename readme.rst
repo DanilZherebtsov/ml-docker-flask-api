@@ -6,24 +6,24 @@ Complete code (including a trained model) to deploy and inference a machine lear
 1. With terminal navigate to the root of this repository
 --------------------------------------------------------
 
-2. Build docker image:
-----------------------
+2. Build docker image
+---------------------
 .. code-block::
 
     docker build -t image_name .
 
-3. Run container:
------------------
+3. Run container
+----------------
 .. code-block::
 
     docker run --name container_name -p 8000:8000 image_name
 
-4. Output will contain:
------------------------
+4. Output will contain
+----------------------
 INFO:     Uvicorn running on http://0.0.0.0:8000
 
-use this url in chrome to see the model frontend
-use http://0.0.0.0:8000/docs for testing the model in the web interface
+Use this url in chrome to see the model frontend;
+use http://0.0.0.0:8000/docs for testing the model in the web interface.
 
 5. Query model
 --------------
